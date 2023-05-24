@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="LatLon" constructor="LatLon" version="0.0.2" display-name-key="Locator" description-key="Locator description" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="latitude" display-name-key="Current Latitude" description-key="Property_Desc_Key" of-type="Decimal" usage="output" required="false" />
+    <property name="longitude" display-name-key="Current Longitude" description-key="Property_Desc_Key" of-type="Decimal" usage="output" required="false" />
+    <property name="target_latitude" display-name-key="Target Latitude" description-key="Property_Desc_Key" of-type="Decimal" usage="bound" required="false" />
+    <property name="target_longitude" display-name-key="Target Longitude" description-key="Property_Desc_Key" of-type="Decimal" usage="bound" required="false" />
+    <property name="distance" display-name-key="Distance in km" description-key="Property_Desc_Key" of-type="Decimal" usage="output" required="false" />
+    <property name="distance_miles" display-name-key="Distance in miles" description-key="Property_Desc_Key" of-type="Decimal" usage="output" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/Locator.css" order="1" />
+      <resx path="strings/Locator.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="false" />
+      <uses-feature name="Device.captureImage" required="false" />
+      <uses-feature name="Device.captureVideo" required="false" />
+      <uses-feature name="Device.getBarcodeValue" required="false" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="false" />
+      <uses-feature name="Utility" required="false" />
+      <uses-feature name="WebAPI" required="false" />
+    </feature-usage>
+  </control>
+</manifest>
