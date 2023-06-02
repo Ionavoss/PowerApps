@@ -1,0 +1,33 @@
+td.empty {
+    background-color: antiquewhite;
+}
+
+td {
+    padding: 10px, 10px, 10px, 10px;
+    width: 60px;
+    height: 60px;
+    background-color: forestgreen;
+    border-radius: 10px;
+    font-weight: bolder;
+    align-items: center; /* Vertically center */
+    text-align: center;
+}
+
+div {
+    user-select: none;
+  }
+
+#progressdiv {
+    width: 320px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 25px;
+    padding: 10px, 10px, 10px, 10px;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.winner {
+    background-color: green;
+}
