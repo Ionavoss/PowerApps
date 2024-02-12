@@ -7,7 +7,7 @@ using Microsoft.Azure.Devices.Client;
 class Program
 {
     private static DeviceClient deviceClient;
-    private static readonly string connectionString = "HostName=d365-iot-demo.azure-devices.net;DeviceId=dht11;SharedAccessKey=DoyB4N+JxjL3qo2ZCdAMyk1+MAb66XtA+V/bjYjPGi0=";
+    private static readonly string connectionString = "DEVICECONNECTIONSTRING";
 
     static async Task Main(string[] args)
     {
